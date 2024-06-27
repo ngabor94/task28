@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HelloApplication">
+    <children>
+        <TableView fx:id="table">
+            <columns>
+                <TableColumn fx:id="nameColumn" text="Név" prefWidth="200"/>
+                <TableColumn fx:id="ageColumn" text="Kor" prefWidth="100"/>
+            </columns>
+        </TableView>
+        <HBox spacing="10">
+            <children>
+                <TextField fx:id="nameInput" promptText="Név" />
+                <TextField fx:id="ageInput" promptText="Kor" />
+                <Button text="Hozzáadás" onAction="#addButtonClicked" />
+                <Button text="Törlés" onAction="#deleteButtonClicked" />
+            </children>
+        </HBox>
+    </children>
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+</VBox>
+<padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+
+    <Label fx:id="welcomeText"/>
+</VBox>
